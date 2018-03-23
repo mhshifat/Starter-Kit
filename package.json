@@ -1,0 +1,42 @@
+{
+  "name": "Starter-Kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm-run-all --parallel compile server",
+    "server": "node-dev ./bin/dev.js",
+    "compile": "node-sass ./assets/scss/app.scss ./public/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhshifat/Starter-Kit.git"
+  },
+  "keywords": [],
+  "author": "Mehedi Hassan Shifat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhshifat/Starter-Kit/issues"
+  },
+  "homepage": "https://github.com/mhshifat/Starter-Kit#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chalk": "^2.3.2",
+    "morgan": "^1.9.0",
+    "node-dev": "^3.1.3",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.0.11"
+  }
+}
