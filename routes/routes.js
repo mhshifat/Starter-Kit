@@ -1,11 +1,11 @@
 module.exports = (app) => {
 
   app.get('/', (req, res) => {
-    res.render("home");
+    res.render("pages/home");
   });
 
   app.get("*", (req, res) => {
-    res.render("notFound");
+    res.render("pages/notFound");
   });
 
 }

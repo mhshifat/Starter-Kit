@@ -32,7 +32,7 @@ app.use(flash());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-require("./router/routes")(app);
+require("./routes/routes")(app);
 
 app.listen(port, () => {
   console.log(chalk.green(`The Server Has Started on http://localhost:${port}`));
